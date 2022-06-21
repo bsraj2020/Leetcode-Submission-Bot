@@ -42,11 +42,11 @@ openBrouser.then( (brouser)=>{
 } ).then( ()=>{
     return page.waitForSelector('input[name="login"]',{visible:true});
  } ).then( ()=>{
-    return page.type('input[name="login"]',"bsraj2020") ;
+    return page.type('input[name="login"]',"_yourUsername") ;
  } ).then( ()=>{
     return page.waitForSelector('input[name="password"]',{visible:true});
  } ).then( ()=>{
-    return page.type('input[name="password"]',"Aku@0123") ;
+    return page.type('input[name="password"]',"_yourPass") ;
  } ).then( ()=>{
     return page.keyboard.press("Enter") ; // Login via username and password and hit enter
 } )
