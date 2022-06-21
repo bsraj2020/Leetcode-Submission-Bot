@@ -85,8 +85,8 @@ async function wait_paste(selector,cpage)
 
     //now we have to click on first result
     await wait_click('a[href="https://leetcode.com/profile/account/"]',new_page);
-    await wait_type( 'input[name="login"]','bsraj2020',new_page );
-    await wait_type_enter( 'input[name="password"]','Aku@0123',new_page );
+    await wait_type( 'input[name="login"]','youusername',new_page );
+    await wait_type_enter( 'input[name="password"]','yourPass',new_page );
     await new_page.waitForTimeout(4000) ;
     await wait_click('a[href="/problemset/all/"]',new_page) ;
     await new_page.waitForTimeout(4000) ;
